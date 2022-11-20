@@ -1,7 +1,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="navbar navbar-expand-lg navbar-dark bg-dark ml-4">
-        <a class="navbar-brand" href="#">SST</a>
+        <a class="navbar-brand" [routerLink]="['/home']"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+            <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+          </svg> SST</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,17 +13,28 @@
                 <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarMetodologia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Metodologías
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-menu" aria-labelledby="navbarMetodologia">
+                <a class="dropdown-item" href="#">Arbol de causas</a>
+                <a class="dropdown-item" href="#">5W-2H</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tutorial</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarTest" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Test</a>
+                <div class="dropdown-menu" aria-labelledby="navbarTest">
+                    <a class="dropdown-item" [routerLink]="['/arbol_causas']" routerLinkActive="router-link-active">Arbol de causas</a>
+                    <a class="dropdown-item" href="#">5W-2H</a>
+                    <a class="dropdown-item" href="#">Nivel de estrés</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarAporte" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Calcular aporte</a>
+                <div class="dropdown-menu" aria-labelledby="navbarAporte">
+                    <a class="dropdown-item" href="#">Trabajadores dependientes</a>
+                    <a class="dropdown-item" href="#">Trabajadores independientes</a>
+                </div>
             </li>
             </ul>
         </div>

@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { MetodologiaArbolComponent } from './metodologia-arbol/metodologia-arbol.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'home', component: HomeComponent},
+  { path: 'arbol_causas', component: MetodologiaArbolComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
